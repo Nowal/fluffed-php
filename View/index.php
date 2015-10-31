@@ -49,7 +49,7 @@
           <div class="col-md-6 col-sm-6 col-xs-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 oxp-45">
             <form class="form-horizontal" method="get" action="index.php">
               <div class="form-group">
-                    <input type="text" value="<?= $value= ($_GET['search']) ? $_GET['search']:NULL; ?>" class="form-control" name="search" style="border:0 !important;">
+                    <input type="text" value="<?php if(isset($_GET['search'])): echo $_GET['search']; endif; ?>" class="form-control" name="search" style="border:0 !important;">
                 </div>
             </form>
           </div>
