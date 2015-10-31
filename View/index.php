@@ -29,7 +29,10 @@
      }
      .init{
        background: url('../images/bg.png') repeat-x;
-       padding: 0 0 30px 0;
+       padding: 0 0 60px 0;
+     }
+     .oxp-45{
+       margin-top: 17px;
      }
     </style>
   </head>
@@ -38,21 +41,16 @@
     <div class="container-fluid init">
       <div class="container">
         <header class="row">
-          <div class="col-md-12">
+          <div class="col-md-12" style="margin-top: 200px">
             <div class="row">
               <div class="col-md-12">
             <h1 class="text-center"><a href="#">Fluffy</a></h1>
           </div>
-          <div class="col-md-6 col-sm-6 col-xs-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3">
+          <div class="col-md-6 col-sm-6 col-xs-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 oxp-45">
             <form class="form-horizontal" method="get" action="index.php">
               <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-btn">
-                    <input type="text" class="form-control" name="search">
-                    <button class="btn btn-info">Search</button>
-                  </span>
+                    <input type="text" class="form-control" name="search" style="border:0 !important;">
                 </div>
-              </div>
             </form>
           </div>
           </div>
