@@ -10,7 +10,7 @@ $db_info['password']  = '';
 
 if(array_count_values($db_info) == 4)
 {
-    $db = new __CORE();
+    $db = new __CORE;
     foreach($db_info AS $key => $value)
     {
         $db->$key = $value; // Like a boss
