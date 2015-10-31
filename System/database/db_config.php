@@ -1,18 +1,13 @@
 <?php
 require 'database.class.php';
 
-$db_info = [];
+$dsn = 'localhost';
+$database = 'database';
+$user = 'root';
+$password = '';
 
-$db_info['dsn']       = 'localhost';
-$db_info['database']  = 'database';
-$db_info['user']      = 'root';
-$db_info['password']  = '';
-
-if(array_count_values($db_info) == 4)
-{
-    $db = new __CORE();
-    foreach($db_info AS $key => $value)
-    {
-        $db->$key = $value; // Like a boss
-    }
-}
+$db = new __CORE;
+$db->dsn = $dsn;
+$db->database = $database;
+$db->user = $user;
+$db->password = $password;
